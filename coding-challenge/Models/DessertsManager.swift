@@ -15,7 +15,6 @@ class DessertsManager: ObservableObject {
         }
     }
     func loadDesserts() async {
-        print("initializing desserts")
         do {
             desserts = try await getDesserts()
         } catch ApiError.invalidUrl {
@@ -27,7 +26,6 @@ class DessertsManager: ObservableObject {
         } catch {
             print("unexpected error")
         }
-        print("dessertsManager initialized")
     }
 }
 
