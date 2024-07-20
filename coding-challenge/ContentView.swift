@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  coding-challenge
-//
-//  Created by Brandon Gomez on 7/18/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -15,10 +8,14 @@ struct ContentView: View {
             List {
                 if let desserts = dessertManager.desserts {
                     ForEach(desserts.meals, id: \.idMeal) { dessert in
-                        Text(dessert.strMeal)
+                        NavigationLink {
+                            DetailsView(idMeal: dessert.idMeal)
+                        } label: {
+                            Text(dessert.strMeal)
+                        }
                     }
                 } else {
-                    Text("Loading desserts...")
+                    ProgressView()
                 }
             }
             .navigationTitle("Desserts")
@@ -30,4 +27,5 @@ struct ContentView: View {
     ContentView()
         .environmentObject(DessertsManager())
 }
+
 

@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct coding_challengeApp: App {
     var dessertsManager = DessertsManager()
+//    var mealsDetailsManager = MealsDetailsManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(dessertsManager)
+//                .environmentObject(mealsDetailsManager)
         }
     }
 }
