@@ -2,8 +2,9 @@ import SwiftUI
 
 struct DetailsView: View {
     @StateObject var mealsDetailsManager: MealsDetailsManager
-    
-    init(idMeal: String) {
+    var mealName: String
+    init(idMeal: String, mealName: String) {
+        self.mealName = mealName
         _mealsDetailsManager = StateObject(wrappedValue: MealsDetailsManager(idMeal: idMeal))
     }
     
@@ -23,17 +24,17 @@ struct DetailsView: View {
                             ProgressView()
                         }
                     )
-                    Text(details.meals.first!.strMeal)
-                        .font(.largeTitle)
                     Text(details.meals.first!.strInstructions)
                 } else {
                     ProgressView()
                 }
             }
-        }.padding()
+        }
+        .padding()
+        .navigationTitle(mealName)
     }
 }
 
 #Preview {
-    DetailsView(idMeal: "53049")
+    DetailsView(idMeal: "53049", mealName: "string")
 }

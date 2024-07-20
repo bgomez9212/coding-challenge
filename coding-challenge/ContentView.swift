@@ -7,9 +7,9 @@ struct ContentView: View {
         NavigationView {
             List {
                 if let desserts = dessertManager.desserts {
-                    ForEach(desserts.meals, id: \.idMeal) { dessert in
+                    ForEach(desserts.meals) { dessert in
                         NavigationLink {
-                            DetailsView(idMeal: dessert.idMeal)
+                            DetailsView(idMeal: dessert.idMeal, mealName: dessert.strMeal)
                         } label: {
                             Text(dessert.strMeal)
                         }
