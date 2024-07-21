@@ -13,10 +13,10 @@
 		E974AC852C49C01D00392892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E974AC842C49C01D00392892 /* Preview Assets.xcassets */; };
 		E974AC982C49EC7C00392892 /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974AC972C49EC7C00392892 /* MealView.swift */; };
 		E974AC9E2C49FDA700392892 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974AC9D2C49FDA700392892 /* DetailsView.swift */; };
-		E9A872F42C4B4D49001DD226 /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A872EE2C4B4D49001DD226 /* MealDetails.swift */; };
-		E9A872F52C4B4D49001DD226 /* MealsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A872EF2C4B4D49001DD226 /* MealsManager.swift */; };
-		E9A872F72C4B4D49001DD226 /* MealsDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A872F12C4B4D49001DD226 /* MealsDetailsManager.swift */; };
-		E9A872F82C4B4D49001DD226 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A872F22C4B4D49001DD226 /* Meals.swift */; };
+		E9A873072C4C9F05001DD226 /* MealsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A873032C4C9EA0001DD226 /* MealsManager.swift */; };
+		E9A873082C4C9F05001DD226 /* MealsDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A873042C4C9EA0001DD226 /* MealsDetailsManager.swift */; };
+		E9A873092C4C9F05001DD226 /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A873052C4C9EA0001DD226 /* MealDetails.swift */; };
+		E9A8730A2C4C9F05001DD226 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A873062C4C9EA0001DD226 /* Meals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +27,10 @@
 		E974AC842C49C01D00392892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E974AC972C49EC7C00392892 /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
 		E974AC9D2C49FDA700392892 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		E9A872EE2C4B4D49001DD226 /* MealDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealDetails.swift; path = ../../../../.Trash/MealDetails.swift; sourceTree = "<group>"; };
-		E9A872EF2C4B4D49001DD226 /* MealsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealsManager.swift; path = ../../../../.Trash/MealsManager.swift; sourceTree = "<group>"; };
-		E9A872F12C4B4D49001DD226 /* MealsDetailsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealsDetailsManager.swift; path = ../../../../.Trash/MealsDetailsManager.swift; sourceTree = "<group>"; };
-		E9A872F22C4B4D49001DD226 /* Meals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meals.swift; path = ../../../../.Trash/Meals.swift; sourceTree = "<group>"; };
+		E9A873032C4C9EA0001DD226 /* MealsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsManager.swift; sourceTree = "<group>"; };
+		E9A873042C4C9EA0001DD226 /* MealsDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDetailsManager.swift; sourceTree = "<group>"; };
+		E9A873052C4C9EA0001DD226 /* MealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetails.swift; sourceTree = "<group>"; };
+		E9A873062C4C9EA0001DD226 /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		E974AC7C2C49C01B00392892 /* coding-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				E974AC8B2C49C08C00392892 /* Models */,
+				E9A873022C4C9E95001DD226 /* Models */,
 				E974AC962C49EC5900392892 /* Views */,
 				E974AC7D2C49C01B00392892 /* coding_challengeApp.swift */,
 				E974AC7F2C49C01B00392892 /* ContentView.swift */,
@@ -81,17 +81,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E974AC8B2C49C08C00392892 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E9A872F22C4B4D49001DD226 /* Meals.swift */,
-				E9A872EF2C4B4D49001DD226 /* MealsManager.swift */,
-				E9A872EE2C4B4D49001DD226 /* MealDetails.swift */,
-				E9A872F12C4B4D49001DD226 /* MealsDetailsManager.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E974AC962C49EC5900392892 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +88,17 @@
 				E974AC9D2C49FDA700392892 /* DetailsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E9A873022C4C9E95001DD226 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9A873052C4C9EA0001DD226 /* MealDetails.swift */,
+				E9A873062C4C9EA0001DD226 /* Meals.swift */,
+				E9A873042C4C9EA0001DD226 /* MealsDetailsManager.swift */,
+				E9A873032C4C9EA0001DD226 /* MealsManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,14 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A872F82C4B4D49001DD226 /* Meals.swift in Sources */,
-				E9A872F42C4B4D49001DD226 /* MealDetails.swift in Sources */,
+				E9A8730A2C4C9F05001DD226 /* Meals.swift in Sources */,
 				E974AC9E2C49FDA700392892 /* DetailsView.swift in Sources */,
 				E974AC802C49C01B00392892 /* ContentView.swift in Sources */,
 				E974AC982C49EC7C00392892 /* MealView.swift in Sources */,
-				E9A872F52C4B4D49001DD226 /* MealsManager.swift in Sources */,
+				E9A873092C4C9F05001DD226 /* MealDetails.swift in Sources */,
 				E974AC7E2C49C01B00392892 /* coding_challengeApp.swift in Sources */,
-				E9A872F72C4B4D49001DD226 /* MealsDetailsManager.swift in Sources */,
+				E9A873072C4C9F05001DD226 /* MealsManager.swift in Sources */,
+				E9A873082C4C9F05001DD226 /* MealsDetailsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
