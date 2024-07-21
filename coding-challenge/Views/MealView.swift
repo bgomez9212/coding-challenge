@@ -1,10 +1,3 @@
-//
-//  MealView.swift
-//  coding-challenge
-//
-//  Created by Brandon Gomez on 7/18/24.
-//
-
 import SwiftUI
 
 struct MealView: View {
