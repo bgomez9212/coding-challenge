@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var dessertManager: DessertsManager
+    @EnvironmentObject var mealsManager: MealsManager
     
     var body: some View {
         NavigationView {
             List {
-                if let desserts = dessertManager.desserts {
+                if let desserts = mealsManager.desserts {
                     ForEach(desserts.meals) { dessert in
                         NavigationLink {
                             DetailsView(idMeal: dessert.idMeal, mealName: dessert.strMeal)
@@ -25,7 +25,7 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(DessertsManager())
+        .environmentObject(MealsManager())
 }
 
 

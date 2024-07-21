@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MealView: View {
-    @EnvironmentObject var dessert: DessertsManager
+    @EnvironmentObject var dessert: MealsManager
     var meal: Meals
     var body: some View {
         HStack {
@@ -17,7 +17,7 @@ struct MealView: View {
                 content: { image in
                     image.resizable()
                          .aspectRatio(contentMode: .fill)
-                         .frame(maxWidth: 150, maxHeight: 75, alignment: .topLeading)
+                         .frame(maxWidth: 100, maxHeight: 50, alignment: .topLeading)
                          .clipped()
                 },
                 placeholder: {
@@ -33,5 +33,5 @@ struct MealView: View {
 
 #Preview {
     MealView(meal: Meals(strMeal: "Pancakes", strMealThumb: "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg", idMeal: "someId"))
-        .environmentObject(DessertsManager())
+        .environmentObject(MealsManager())
 }

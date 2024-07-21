@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct coding_challengeApp: App {
-    var dessertsManager = DessertsManager()
-//    var mealsDetailsManager = MealsDetailsManager()
+    var mealsManager = MealsManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(dessertsManager)
-//                .environmentObject(mealsDetailsManager)
+                .environmentObject(mealsManager)
         }
     }
 }
