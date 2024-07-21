@@ -9,6 +9,7 @@ import Foundation
 
 class MealsManager: ObservableObject {
     @Published var desserts: MealsResponse?
+    @Published var errorMessage: String?
     init() {
         Task {
             await loadDesserts()
@@ -17,14 +18,15 @@ class MealsManager: ObservableObject {
     func loadDesserts() async {
         do {
             desserts = try await getDesserts()
+            errorMessage = nil
         } catch ApiError.invalidUrl {
-            print("invalid Url")
+            errorMessage = "invalid URL"
         } catch ApiError.invalidResponse {
-            print("invalid response")
+            errorMessage = "invalid response"
         } catch ApiError.invalidData {
-            print("invalid data")
+            errorMessage = "invalid data"
         } catch {
-            print("unexpected error")
+            errorMessage = "unexpected error"
         }
     }
 }

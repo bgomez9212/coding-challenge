@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		E974AC7A2C49C01B00392892 /* coding-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coding-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E974AC7D2C49C01B00392892 /* coding_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coding_challengeApp.swift; sourceTree = "<group>"; };
-		E974AC7F2C49C01B00392892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E974AC7F2C49C01B00392892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "coding-challenge/ContentView.swift"; sourceTree = SOURCE_ROOT; };
 		E974AC812C49C01D00392892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E974AC842C49C01D00392892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E974AC972C49EC7C00392892 /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
@@ -93,10 +93,10 @@
 		E9A873022C4C9E95001DD226 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E9A873052C4C9EA0001DD226 /* MealDetails.swift */,
 				E9A873062C4C9EA0001DD226 /* Meals.swift */,
-				E9A873042C4C9EA0001DD226 /* MealsDetailsManager.swift */,
 				E9A873032C4C9EA0001DD226 /* MealsManager.swift */,
+				E9A873052C4C9EA0001DD226 /* MealDetails.swift */,
+				E9A873042C4C9EA0001DD226 /* MealsDetailsManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
