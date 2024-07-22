@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9106C582C4DFE1C009E69F1 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9106C572C4DFE1C009E69F1 /* AsyncImageView.swift */; };
 		E974AC7E2C49C01B00392892 /* coding_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974AC7D2C49C01B00392892 /* coding_challengeApp.swift */; };
 		E974AC802C49C01B00392892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974AC7F2C49C01B00392892 /* ContentView.swift */; };
 		E974AC822C49C01D00392892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E974AC812C49C01D00392892 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9106C572C4DFE1C009E69F1 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E974AC7A2C49C01B00392892 /* coding-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coding-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E974AC7D2C49C01B00392892 /* coding_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coding_challengeApp.swift; sourceTree = "<group>"; };
 		E974AC7F2C49C01B00392892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "coding-challenge/ContentView.swift"; sourceTree = SOURCE_ROOT; };
@@ -86,6 +88,7 @@
 			children = (
 				E974AC972C49EC7C00392892 /* MealView.swift */,
 				E974AC9D2C49FDA700392892 /* DetailsView.swift */,
+				E9106C572C4DFE1C009E69F1 /* AsyncImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				E974AC802C49C01B00392892 /* ContentView.swift in Sources */,
 				E974AC982C49EC7C00392892 /* MealView.swift in Sources */,
 				E9A873092C4C9F05001DD226 /* MealDetails.swift in Sources */,
+				E9106C582C4DFE1C009E69F1 /* AsyncImageView.swift in Sources */,
 				E974AC7E2C49C01B00392892 /* coding_challengeApp.swift in Sources */,
 				E9A873072C4C9F05001DD226 /* MealsManager.swift in Sources */,
 				E9A873082C4C9F05001DD226 /* MealsDetailsManager.swift in Sources */,
