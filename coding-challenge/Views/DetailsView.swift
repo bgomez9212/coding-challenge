@@ -6,6 +6,7 @@ struct DetailsView: View {
     init(idMeal: String, mealName: String) {
         self.mealName = mealName
         _mealsDetailsManager = StateObject(wrappedValue: MealsDetailsManager(idMeal: idMeal))
+        UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
     }
     
     var body: some View {
@@ -25,13 +26,15 @@ struct DetailsView: View {
                         },
                         placeholder: {
                             ProgressView()
+                                .frame(maxWidth: 500, minHeight: 300)
                         }
                     )
+
                     VStack(alignment: .leading, content: {
                         Text("Ingredients").font(.title).bold()
-                        if let meals = details.meals.first {
-                            ForEach(0..<meals.ingredients.count) { index in
-                                Text("-\(meals.measures[index]!) \(meals.ingredients[index]!)")
+                        if let meal = details.meals.first {
+                            ForEach(0..<meal.ingredients.count) { index in
+                                Text("-\(meal.measures[index]!) \(meal.ingredients[index]!)")
                             }
                         }
                     })
@@ -42,8 +45,6 @@ struct DetailsView: View {
             }
             .padding()
             .navigationTitle(mealName)
-        } else {
-            ProgressView()
         }
     }
 }
