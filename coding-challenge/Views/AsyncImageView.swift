@@ -21,5 +21,6 @@ struct AsyncImageView: View {
 }
 
 #Preview {
-    AsyncImageView(imageUrl: "someimage")
+    AsyncImageView(imageUrl: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg")
+        .padding()
 }
