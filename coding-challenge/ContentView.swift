@@ -4,9 +4,11 @@ struct ContentView: View {
     @EnvironmentObject var mealsManager: MealsManager
     
     var body: some View {
-        NavigationView {
-            List {
-                if let desserts = mealsManager.desserts {
+        if let error = mealsManager.errorMessage {
+            Text(error)
+        } else if let desserts = mealsManager.desserts {
+            NavigationView {
+                List {
                     ForEach(desserts.meals) { dessert in
                         NavigationLink {
                             DetailsView(idMeal: dessert.idMeal, mealName: dessert.strMeal)
@@ -14,11 +16,11 @@ struct ContentView: View {
                             Text(dessert.strMeal)
                         }
                     }
-                } else {
-                    ProgressView()
                 }
+                .navigationTitle("Desserts")
             }
-            .navigationTitle("Desserts")
+        } else {
+            ProgressView()
         }
     }
 }

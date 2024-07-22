@@ -1,14 +1,8 @@
-//
-//  MealsDetailsManager.swift
-//  coding-challenge
-//
-//  Created by Brandon Gomez on 7/18/24.
-//
-
 import Foundation
 
-class MealsDetailsManager: ObservableObject {
+@MainActor class MealsDetailsManager: ObservableObject {
     @Published var mealDetails: MealsDetailsResponse?
+    @Published var errorMessage: String?
     private var idMeal: String
     init(idMeal: String) {
         self.idMeal = idMeal
@@ -19,14 +13,15 @@ class MealsDetailsManager: ObservableObject {
     func loadDetails() async {
         do {
             mealDetails = try await getDetails(idMeal: idMeal)
+            errorMessage = nil
         } catch DetailsError.invalidUrl {
-            print("invalid url")
+            errorMessage = "invalid URL"
         } catch DetailsError.invalidResponse {
-            print("invalid response")
+            errorMessage = "invalid response"
         } catch DetailsError.invalidData {
-            print("invalid data")
+            errorMessage = "invalid data"
         } catch {
-            print("unexpected error")
+            errorMessage = "something went wrong"
         }
     }
 }
